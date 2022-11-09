@@ -26,6 +26,7 @@ ul{
 }
 ul li a {
     text-decoration: none;
+    color: #000;
 }
 .background{
   margin-top: 15%;
