@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--link to css--->
     <link rel="stylesheet" href="css/style.css">
+     <!--link to js--->
+	<script type="text/javascript" src="js/script.js"></script>  
 </head>
 <body>
     <div  class="header"> 
         <nav>
-            <div class="logo"><img src="img/Logo.png"
-                width="27%";
-                height="auto"; ></div>
+            <div class="logo"><img class="logo2" src="img/Logo.png" ></div>
             
-                
-           
-            <ul>
-                <li><a href="Index.html">Acceuil</a></li>
-                <li><a href="carte.html">Carte</a></li>
-                <li><a href="A propos.html">A propos</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+            <div class="bx" onclick="sidebar()">
+                <img src="img/clipart993015.png" alt="" width="5%">
+            </div>  
+            <div id="closer" class="closed" onclick="closebar()">X</div>
+            <ul id="nav-bar" class="navbar">
+                <li><a href="Index.html">Acceuil</a></li> -|-
+                <li><a href="carte.html">Carte</a></li> -|-
+                <li><a href="A propos.html">A propos</a></li> -|-
+                <li><a href="Contact.html">Contact</a></li> 
             </ul>
         </nav>
     </div>
@@ -28,10 +31,10 @@
     
         <img class="background" src="img/first.png" 
         width="100%" ;
-        height="50%";>
+        height="auto";>
         <img class="Hitaka" src="img/samurai_cat_1.png"
         width= "30%";
-        height= "30%";  >   
+        height= "auto";  >   
     </div>
     </div>
     
@@ -40,26 +43,23 @@
         
             <div class="title"><h1>Contact us</h1></div>
             <div class="hero">
-              <img class="background2" src="img/small dish.png"
-              width="30%" ;
-              height="30%";>
+              <img class="background2" src="img/small dish.png">
               <div class="Hitaka2">
                 <form action>
-                    <label class="higher" for="fname">Name</label>
+                    <label for="fname"><p class="contact-font" >Name:</label>
                     <input type="text"  required id="fname" name="fname"><br><br>
-                    <label class="higher" for="fname">N°Tel</label>
-                    <input type="text"  required id="fname2" name="fname"><br><br>
-                    <label class="higher"for="lname">E-Mail</label>
+                    <label for="fname"><p class="contact-font" >N°Tel:</label>
+                    <input type="text"  required id="fname" name="fname"><br><br>
+                    <label for="lname"><p class="contact-font" >E-Mail:</label>
                     <input type="email" required id="lname" name="lname"><br><br>
-                    <div class="hero3">
-                      <p>Message</p>
-                      <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
+                    <div class="hero5">
+                        <p class="contact-font2" >Message:</p>
+                      <textarea name="message" id="textarea" cols="70" rows="10"></textarea>
                   </div>
                   <input type="submit" value="Submit" class="sub">
                     
                   </form>
               </div> 
-              <img src="img/Delivery.png" width="100%" height="auto">
 
 
             </div>
@@ -72,7 +72,12 @@
 
         
     </div>
-    
+    <div>
+        <img src="img/Delivery.png" 
+        width="100%"
+        height="auto"
+        >
+    </div>
     
     
           <div class="hero">
@@ -81,19 +86,26 @@
                 width="100%" ;
                 height="auto" ;>
             </div>
-            <div class="git"></div>
+            <div >
+                <img class="git"src="img/Gif.gif" 
+                width="100%"
+                height="67%">
+
+            </div>
+            
             <div class="footermail">
-                <h3>Hitaka @gmail.com</h3>
+                <h2>Hitaka @gmail.com</h2>
             </div>
             <div class="rights">
-                <h3>All Rights Reserved by HITAKA</h3>
+                <h2>All Rights Reserved by HITAKA © 2022</h2>
             </div>
             <div class="number">
-                <h3>023104985123</h3>
+                <h2>023104985123</h2>
             </div>
-            <div  class="facebook"> </div>
-            <div  class="instagram"> </div>
-            <div  class="twitter"> </div>
+            <div  > 
+                <img class="facebook" src="img/Facebook.png" alt=""> </div>
+            <div  > <img class="instagram" src="img/instagram.png" alt=""> </div>
+            <div  > <img class="twitter" src="img/Tweetter.png" alt=""></div>
         </div> 
            
 </body>
