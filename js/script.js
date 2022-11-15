@@ -10,12 +10,11 @@ list.forEach((el)=>{
         box.forEach((el2)=>{
             el2.style.display = "none";
         })
-        document.querySelectorAll(e.target.dataset.color).forEach((el3)=>{
+        document.querySelectorAll(e.target.dataset.filter).forEach((el3)=>{
             el3.style.display = "flex";
         })
     })
 })
-
 
 
 menu.onclick = () => {
