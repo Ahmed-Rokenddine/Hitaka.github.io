@@ -17,15 +17,7 @@ list.forEach((el)=>{
 })
 
 
-menu.onclick = () => {
-	menu.classList.toggle('bx-x');
-	navbar.classList.toggle('open');
-};
 
-window.onscroll = () => {
-	menu.classList.remove('bx-x');
-	navbar.classList.remove('open');
-};
 
     
   
@@ -89,9 +81,10 @@ window.onscroll = () => {
             
                     
                     }
-                    function foo() {   alert("Commande Validé!");
-   return true;
-}
+            function Validé() {   alert("Commande Validé!"); 
+                window.location.reload();
+             return true;
+                        }
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);
@@ -130,10 +123,7 @@ function sidebar() {
      element.classList.remove("btncloser");
     
  };
- function savecommande(){
- var input = document.getElementById('saveServer').value;
- localStorage.setItem('total', input);
- }
+ 
  
  
     
