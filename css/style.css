@@ -55,6 +55,9 @@ ul li a {
     top: 0px;
     
 }
+.red{
+    color: #fc0000;
+}
 #fname, #lname {
     width: 40%;
     height: 2rem;
@@ -254,7 +257,7 @@ textarea {
     border: 0;
     border-radius: 12px;
     background-color: #de0012;
-    WIDTH: 4vmax;
+    WIDTH: 5vmax;
     margin-left: 4%;
     padding-left: 3px;
   }

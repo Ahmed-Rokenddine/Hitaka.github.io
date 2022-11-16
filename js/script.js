@@ -53,7 +53,7 @@ list.forEach((el)=>{
 				if (checkboxes[i].value != 0) {
                     x = checkboxes[i].placeholder;
                     sumfinal = checkboxes[i].value  ;
-                    sum =  sum + parseInt(x*sumfinal)
+                    sum =  sum + parseFloat(x*sumfinal)
 					
                     console.log(i)
                     document.listForm.total.value = sum;
