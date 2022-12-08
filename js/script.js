@@ -39,11 +39,11 @@ list.forEach((el)=>{
      
      
 		function getValue() {
-        document.listForm.total.value = '';
+        document.listForm.totality.value = '';
 			var checkboxes =
 				document.getElementsByName('laptop');
 
-			var result = "";
+		
             var sum=0;
             var sumfinal;
             var x ;
@@ -56,7 +56,7 @@ list.forEach((el)=>{
                     sum =  sum + parseFloat(x*sumfinal)
 					
                     console.log(i)
-                    document.listForm.total.value = sum;
+                    document.listForm.totality.value = sum;
 				}
                 
 			}
@@ -82,7 +82,7 @@ list.forEach((el)=>{
                     
                     }
             function Validé() {   alert("Commande Validé!"); 
-                window.location.reload();
+                clear();
              return true;
                         }
 function increaseCount(a, b) {
@@ -123,6 +123,14 @@ function sidebar() {
      element.classList.remove("btncloser");
     
  };
+ function clear(){
+    document.platform.total.value = "";
+    document.listForm.totality.value = 0;
+    var checkboxes = document.getElementsByName('laptop');
+    for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].value= 0;
+    }
+}
  
  
  

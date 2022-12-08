@@ -21,7 +21,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 9px 0;
     list-style: none;
 }
 ul li a {
@@ -29,7 +29,7 @@ ul li a {
     color: #000;
 }
 .background{
-  margin-top: 15%;
+  margin-top: 11%;
   
 }
 .background2{
@@ -433,6 +433,7 @@ p{
     border-radius: 18px;
     align-items: center;
     text-align: center; 
+    width: 50%;
 }
 .top1{
     display: flex;
@@ -679,7 +680,7 @@ p{
     animation: movement 1s ease-in-out;
 }
 .logo2{
-    width: 21%;
+    width: 17%;
     height: auto;
 }
 .box .box_img{
@@ -801,13 +802,30 @@ p{
     .box{
         width: 49%;
     }
+    #fname,#lname,#textarea{
+        width: 60%;
+    }
+    .sub{
+        margin: 3% 0 0 35%;
+    }
 }
 @media(max-width: 991px){
+    .minimenu {
+         
+        width: 100%;
+    }
+    .minitext{
+        left: 28%;
+        font-size: 3.2vmax;
+    }
     .container .title{
         width: 80%;
     }
     .box .box_img{
         text-align: left;
+    }
+    #fname,#lname,#textarea{
+        width: 70%;
     }
     .box_img img {
         width: 170px;
